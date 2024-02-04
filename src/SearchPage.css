@@ -1,0 +1,20 @@
+/* SearchPage.css */
+
+.search-page {
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-page h1{
+    font-size: 1.75em;
+    color: #333;
+    margin-bottom: 25px;
+
+}

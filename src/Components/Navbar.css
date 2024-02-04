@@ -1,0 +1,114 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 3rem;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  width: 100px;
+  max-width: 150px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.chosen-value {
+  cursor: pointer;
+  background-color: #100f0e;
+  color: #dcdcdc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.chosen-value:hover {
+  background-color: #f2b441;
+  color: #fff;
+}
+
+.chosen-value svg {
+  margin-right: 10px;
+}
+
+.chosen-value i {
+  margin-left: 10px;
+}
+
+.value-list {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 8;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  overflow: auto;
+  max-height: 200px;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease;
+}
+
+.value-list li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.value-list li:hover {
+  background-color: #f2b441;
+}
+
+.dropdown:hover .value-list {
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 15px 3rem;
+  }
+
+  @media (max-width: 500px) {
+    .navbar {
+      padding: 15px 1rem;
+    }
+
+    .navbar-logo {
+      width: 100px;
+      max-width: 150px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+
+
+  }
+
+
+
+}

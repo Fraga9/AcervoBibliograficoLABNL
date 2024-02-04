@@ -1,0 +1,285 @@
+/* BookSearch.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.title-container-options {
+    margin: 0px 0px 5px 0px;
+}
+
+.select-options {
+    margin-bottom: 5px;
+}
+
+
+.book-search-container {
+    width: 100%;
+    max-width: 850px;
+    margin: 5em auto 0 auto; /* top | right | bottom | left */
+    padding: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 5;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* Para compatibilidad con Safari */
+}
+
+.logo {
+    width: 435px;
+    height: 113px;
+}
+
+.book-search-form {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 1%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    font-size: 18px;
+}
+
+
+
+
+/*.book-search-form select {
+    padding: 1%;
+    border: none;
+    border-radius: 4px;
+    margin-right: 1%; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+
+}*/
+
+
+
+.book-search-form option:checked {
+    background-color: #F2B441;
+    color: #fff;
+}
+
+
+
+.book-search-input {
+    flex-grow: 1;
+    padding: 1%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-dropdown {
+    background-color: #f8f8f8;
+    color: #333;
+    flex-grow: 1;
+    padding: 1%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    height: 40px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.book-search-button {
+    padding: 1% 2%;
+    border: none;
+    background-color: #F2B441;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 1%;
+    transition: background-color 0.3s ease;
+}
+
+.book-search-button:hover {
+    background-color: #d19c3b;
+}
+
+.book-search-results {
+    list-style: none;
+    padding: 0;
+    height: 18em;
+    overflow-y: auto;
+}
+
+.container-result {
+    display: flex;
+    align-items: center;
+}
+
+.container-result:hover,
+.book-search-result:hover {
+    background-color: rgb(218, 218, 218);
+    cursor: pointer;
+}
+
+.book-search-result {
+    padding: 3px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.book-search-result:last-child {
+    border-bottom: none;
+}
+
+
+.book-search-result-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.book-search-result-author {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.book-search-result-image {
+    width: 60px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+
+
+@media (min-width: 1080px) {
+    .booksearch-container {
+        max-width: 700px;
+        width: 80%;
+    }
+    
+}
+
+
+@media (max-width: 700px){
+
+    .book-search-container {
+        max-width: 80%;
+    }
+
+    .book-search-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-search-input {
+        margin: 15px 0px;
+        height: 30px;
+        width: 100%;
+    }
+
+    .book-search-button{
+        height: 35px;
+        width: 75%;
+    }
+
+    .search-dropdown{
+        max-width: 100%;
+    }
+
+    .search-bar-container{
+        margin-top: 15px;
+    }
+
+    .book-search-result-title {
+        font-size: 1em;
+    }
+
+    .book-search-result-author {
+        font-size: 0.8em;
+    }
+
+    .book-search-title{
+        font-size: 4vh;
+    }
+    
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*
+@media (max-width: 600px) {
+    .book-search-container {
+        max-width: 90%;
+    }
+
+    .book-search-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-search-input {
+        margin: 15px 0px;
+        height: 30px;
+        width: 100%;
+    }
+
+    .book-search-button{
+        height: 35px;
+        width: 75%;
+    }
+
+   
+    
+
+    
+}
+
+
+*/
+
+
+/*@media (min-width: 768px)  {
+    
+    .book-search-input{
+            height: 30px;
+            width: 70%;
+    }
+
+    .book-search-title{
+        font-size: 5vh;
+    }
+
+    .book-search-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .book-search-button{
+        height: 35px;
+    }
+
+    .search-dropdown{
+        max-width: 60%;
+    }
+
+    .search-bar-container{
+        margin-top: 15px;
+    }
+}*/
