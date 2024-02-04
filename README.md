@@ -31,7 +31,7 @@
     - **Descripción:** Archivos de estilos CSS y recursos gráficos como imágenes utilizados para mejorar la apariencia y la experiencia del usuario.
 
 - **2.1.4 Pasos:**
-    1. **Configuración del Proyecto:**
+     - **Configuración del Proyecto:**
      - **Descripción:** Inicia un nuevo proyecto de React utilizando Create React App o la configuración personalizada según tus necesidades.
      - **Comandos:**
        ```bash
@@ -68,6 +68,7 @@
   
   10. **Despliegue en Producción:**
      - **Descripción:** Despliega tu aplicación en un servicio de alojamiento web, como Vercel, Netlify o GitHub Pages. Configura las opciones de construcción y asegúrate de que la aplicación sea accesible en línea.
+
 
 
 
