@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+### 2. Desarrollo
+#### 2.1 Receta
+- **2.1.1 Hoja de Ruta:**
+  - **Descripción:** El proyecto sigue una estructura de carpetas y archivos organizada para facilitar el mantenimiento y la comprensión del código.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **2.1.2 Partes del Prototipo:**
+  - **Descripción:** La aplicación consta de varios componentes clave como `App`, `BookDetails`, `BookSearch`, `Home`, `Banner`, `Footer`, y `Navbar`, cada uno desempeñando un papel específico.
 
-## Available Scripts
+- **2.1.3 Ingredientes:**
+  - **3.1.3.1 Librerías:**
+    - **React:**
+      - **Descripción:** Utilizada para construir la interfaz de usuario mediante componentes.
+    - **react-router-dom:**
+      - **Descripción:** Maneja la navegación y las rutas dentro de la aplicación React.
+    - **react-responsive-carousel:**
+      - **Descripción:** Implementa un carrusel para mostrar libros recomendados.
+    - **axios:**
+      - **Descripción:** Se utiliza para realizar solicitudes HTTP y obtener datos desde Google Sheets.
+    - **papaparse:**
+      - **Descripción:** Herramienta para analizar y procesar datos en formato CSV.
+  - **3.1.3.2 Hooks de React:**
+    - **useState:**
+      - **Descripción:** Gestiona el estado local en componentes funcionales.
+    - **useEffect:**
+      - **Descripción:** Utilizado para operaciones asíncronas como solicitudes de datos y actualizaciones de estado.
+    - **useParams:**
+      - **Descripción:** Permite acceder a los parámetros de la URL en componentes de React.
+    - **useNavigate:**
+      - **Descripción:** Facilita la navegación programática entre rutas.
+  - **3.1.3.3 Estilos y Recursos:**
+    - **Descripción:** Archivos de estilos CSS y recursos gráficos como imágenes utilizados para mejorar la apariencia y la experiencia del usuario.
 
-In the project directory, you can run:
+- **2.1.4 Pasos:**
+    1. **Configuración del Proyecto:**
+     - **Descripción:** Inicia un nuevo proyecto de React utilizando Create React App o la configuración personalizada según tus necesidades.
+     - **Comandos:**
+       ```bash
+       npx create-react-app nombre-del-proyecto
+       ```
+  
+  2. **Instalación de Dependencias:**
+     - **Descripción:** Instala las dependencias necesarias para la navegación y la visualización de imágenes.
+     - **Comandos:**
+       ```bash
+       npm install react-router-dom react-responsive-carousel
+       ```
+  
+  3. **Estructura de Carpetas y Archivos:**
+     - **Descripción:** Organiza tu proyecto creando carpetas para componentes, estilos y páginas. Crea los archivos principales, como `App.js`, `index.js`, y otros según tu estructura.
+  
+  4. **Diseño de la Página Principal (Home):**
+     - **Descripción:** Diseña y desarrolla la página principal con un banner, barra de búsqueda y muestra de libros utilizando componentes React.
+  
+  5. **Implementación de la Búsqueda:**
+     - **Descripción:** Crea un componente de búsqueda que permita al usuario buscar libros según el título, autor o palabras clave. Utiliza el estado para gestionar los resultados de la búsqueda.
+  
+  6. **Obtención de Datos desde CSV:**
+     - **Descripción:** Crea una función para obtener datos desde un archivo CSV utilizando la librería PapaParse y Axios. Los datos pueden contener información sobre los libros, como título, autor, imagen, etc.
+  
+  7. **Detalle del Libro:**
+     - **Descripción:** Desarrolla una página de detalles del libro que muestre información detallada sobre un libro seleccionado, como título, autor, categoría, y una lista de libros recomendados.
+  
+  8. **Estilo y Diseño:**
+     - **Descripción:** Aplica estilos a tu aplicación utilizando CSS o un preprocesador como SCSS. Asegúrate de que la interfaz sea atractiva y fácil de navegar.
+  
+  9. **Integración con GitHub:**
+     - **Descripción:** Crea un repositorio en GitHub y sube tu proyecto. Asegúrate de incluir un archivo README con información sobre cómo ejecutar y replicar el proyecto.
+  
+  10. **Despliegue en Producción:**
+     - **Descripción:** Despliega tu aplicación en un servicio de alojamiento web, como Vercel, Netlify o GitHub Pages. Configura las opciones de construcción y asegúrate de que la aplicación sea accesible en línea.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
